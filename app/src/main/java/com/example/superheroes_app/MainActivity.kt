@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.superheroes_app.ui.theme.Superheroes_AppTheme
+import com.example.compose.Superheroes_AppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,3 +44,11 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+
+@Preview
+@Composable
+fun Superheroes_AppTheme_Preview(){Superheroes_AppTheme(useDarkTheme = true) {
+    Greeting("Android")
+    }
+}
+
